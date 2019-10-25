@@ -1,9 +1,12 @@
 import React from 'react';
 
 class ChangeCollorButton extends React.Component {
+    handleClick() {
+        console.log("Clicked!")
+    }
     render(){
         return (
-            <button>Change the color</button>
+            <button onClick={this.handleClick}>Change the color</button>
         );
     }
 }
