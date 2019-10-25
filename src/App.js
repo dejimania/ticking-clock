@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Clock from './Clock';
+import ColoredBlock from './ColoredBlock';
 
 // let time = new Date().toLocaleString();
 
@@ -44,6 +45,10 @@ class App extends Component {
           Hi {this.props.name}!
         </p>
         <Clock ></Clock>
+        <div className="main-content">
+          <ColoredBlock />
+        </div>
+        <footer>Kay Consults &copy; 2019</footer>
       </div>
     );
   }
