@@ -31,7 +31,6 @@ import Clock from './Clock';
 //   );
 // }
 
-let time = new Date().toLocaleString();
 
 class App extends Component {
   render() {

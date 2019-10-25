@@ -2,13 +2,18 @@ import React from 'react';
 import { className } from 'postcss-selector-parser';
 
 
-let time = new Date().toLocaleString();
 
 class Clock extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            time: new Date().toLocaleString()
+        };
+    }
     render() {
         return(
             <p className="App-clock">
-                The time is {time}
+                The time is {this.state.time}
             </p>
         );
     }
